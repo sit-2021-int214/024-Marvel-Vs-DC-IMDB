@@ -1,5 +1,5 @@
 # GroupID-Datasetname
-Datasets from: [NAME](link)
+Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
 ## Objective
 
@@ -10,11 +10,12 @@ Datasets from: [NAME](link)
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 ### Team: nameXXXXXX
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+1. นางสาว ปิยะมน สุดดี        Student id : 63130500082         
+2. นางสาว วารีวัล พงศ์พันธ์ชัยกุล Student id : 63130500105
+3. นางสาว สริดา บัวแก้ว        Student id : 63130500112
+4. นาย สุทธิพงษ์ ชนะมูล       Student id : 63130500121
+5. นางสาว สุพิชญา หมื่นนุช     Student id : 63130500123
+
 
 ### Instructor
 - ATCHARA TRAN-U-RAIKUL
