@@ -24,9 +24,9 @@ Code here
 Code here
 ```
 
-5.) Descriptive statistics Statement
+5.) จากข้อมูลใน survey เป็นการบอกว่ามีใครถนัดด้านซ้าย ด้านขวา และ ไม่ถนัดทั้ง 2 ด้าน Left = 39 , Neither = 50 , Right = 147
 ```{R}
-Code here
+table(survey$Clap)
 ```
 
 
