@@ -9,9 +9,9 @@ gender <- factor(cats$Sex)
 summary(gender)
 ```
 
-2.) Descriptive statistics Statement
+2.) จากข้อมูลใน cats เป็นการบอกค่าสูงสุดของ Body weight ของแมวทั้งเพศชาย และ หญิง = 39 
 ```{R}
-Code here
+max(cats$Bwt)
 ```
 
 3.) Descriptive statistics Statement
