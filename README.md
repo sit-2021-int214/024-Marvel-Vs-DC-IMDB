@@ -9,7 +9,7 @@ Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/mar
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: Numberone
+### Team: 024 - Numberone
 1. นางสาว ปิยะมน สุดดี        Student id : 63130500082         
 2. นางสาว วารีวัล พงศ์พันธ์ชัยกุล Student id : 63130500105
 3. นางสาว สริดา บัวแก้ว        Student id : 63130500112
