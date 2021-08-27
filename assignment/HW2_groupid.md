@@ -14,9 +14,9 @@ summary(gender)
 max(cats$Bwt)
 ```
 
-3.) Descriptive statistics Statement
+3.) จากข้อมูลใน cats  เป็นการบอกค่าต่ำสุดของ Heart weight ของแมวทั้งเพศชาย และ หญิง = 6.3
 ```{R}
-Code here
+min(cats$Hwt)
 ```
 
 4.) จากข้อมูลใน survey เป็นการบอกรายละเอียดของการสูบบุหรี่ว่ามีระดับไหนบ้าง Heavy = 11 , Never = 189 , Occas = 19 , Regul=17 , NA's = 1
