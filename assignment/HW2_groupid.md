@@ -1,11 +1,12 @@
 # Assignment 2 (Group)
 Explore 2 dataset that given then finding descriptive statistics and summary result in form of sentences/paragraph at least 5 topics.
 
-### Answer
 
-1.) From survey, most students use left hand writing.
+1.) จากข้อมูลใน cats เป็นการบอกรายละเอียดข้อมูลเพศของแมวว่า แมวเพศหญิงมี 47 ตัว และ เพศชายมี 97 ตัว
 ```{R}
-Code here
+factor(cats$Sex)
+gender <- factor(cats$Sex)
+summary(gender)
 ```
 
 2.) Descriptive statistics Statement
@@ -13,11 +14,25 @@ Code here
 Code here
 ```
 
+3.) Descriptive statistics Statement
+```{R}
+Code here
+```
 
-### Team: xxxxxxx
+4.) Descriptive statistics Statement
+```{R}
+Code here
+```
 
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+5.) Descriptive statistics Statement
+```{R}
+Code here
+```
+
+
+### Team: 024 - Numberone
+1.นางสาว ปิยะมน สุดดี Student id : 63130500082
+2.นางสาว วารีวัล พงศ์พันธ์ชัยกุล Student id : 63130500105
+3.นางสาว สริดา บัวแก้ว Student id : 63130500112
+4.นาย สุทธิพงษ์ ชนะมูล Student id : 63130500121
+5.นางสาว สุพิชญา หมื่นนุช Student id : 63130500123
