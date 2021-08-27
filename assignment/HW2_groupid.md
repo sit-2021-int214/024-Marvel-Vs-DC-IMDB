@@ -19,9 +19,11 @@ Code here
 Code here
 ```
 
-4.) Descriptive statistics Statement
+4.) จากข้อมูลใน survey เป็นการบอกรายละเอียดของการสูบบุหรี่ว่ามีระดับไหนบ้าง Heavy = 11 , Never = 189 , Occas = 19 , Regul=17 , NA's = 1
 ```{R}
-Code here
+factor(survey$Smoke)
+data <- factor(survey$Smoke)
+summary(data)
 ```
 
 5.) จากข้อมูลใน survey เป็นการบอกว่ามีใครถนัดด้านซ้าย ด้านขวา และ ไม่ถนัดทั้ง 2 ด้าน Left = 39 , Neither = 50 , Right = 147
