@@ -15,7 +15,7 @@ max(cats$Bwt)
 ```
 Explore Data with dpylr :
 ```{R}
-Code here
+cats %>% dplyr::select(Bwt)%>% max()
 ```
 
 3.จากข้อมูลใน cats  เป็นการบอกค่าต่ำสุดของ Heart weight ของแมวทั้งเพศชาย และ หญิง = 6.3
