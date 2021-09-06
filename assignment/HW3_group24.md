@@ -47,7 +47,10 @@ table(survey$Clap)
 ```
 Explore Data with dpylr :
 ```{R}
-Code here
+eachClap <- c("Left","Neither","Right","NA's" )
+countEachClap <- survey %>% dplyr::select(Clap) %>% summarise(Clap = summary(Clap , na.rm = TRUE)) 
+detailOfClap <- data.frame(eachClap , countEachClap)
+detailOfClap
 ```
 ### Team: 024 - Numberone
 1.นางสาว ปิยะมน สุดดี Student id : 63130500082
