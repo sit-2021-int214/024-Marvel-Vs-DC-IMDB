@@ -6,7 +6,7 @@ summary(gender)
 ```
 Explore Data with dpylr :
 ```{R}
-Code here
+cats %>% dplyr::select(Sex)%>% count(Sex)
 ```
 
 2.จากข้อมูลใน cats  เป็นการบอกค่าสูงสุดของ Body weight ของแมวทั้งเพศชาย และ หญิง = 3.9
