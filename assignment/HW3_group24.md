@@ -35,7 +35,10 @@ summary(data)
 ```
 Explore Data with dpylr :
 ```{R}
-Code here
+eachSmoke <- c("Heavy","Never","Occas","Regul","NA's" )
+countEachSmoke <- survey %>% dplyr::select(Smoke) %>% summarise(Smoke = summary(Smoke , na.rm = TRUE)) 
+detailOfSmoke <- data.frame(eachSmoke , countEachSmoke)
+detailOfSmoke
 ```
 
 5.จากข้อมูลใน survey เป็นการบอกว่ามีใครถนัดด้านซ้าย ด้านขวา และ ไม่ถนัดทั้ง 2 ด้าน Left = 39 , Neither = 50 , Right = 147
