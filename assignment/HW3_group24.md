@@ -24,7 +24,7 @@ min(cats$Hwt)
 ```
 Explore Data with dpylr :
 ```{R}
-Code here
+cats %>% dplyr::select(Hwt)%>% min()
 ```
 
 4.จากข้อมูลใน survey เป็นการบอกรายละเอียดของการสูบบุหรี่ว่ามีระดับไหนบ้าง Heavy = 11 , Never = 189 , Occas = 19 , Regul=17 , NA's = 1
