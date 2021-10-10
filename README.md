@@ -3,7 +3,7 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 
 ### About's Products Datasets
 
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
+This dataset is about's 
 
 ## Overview
 
