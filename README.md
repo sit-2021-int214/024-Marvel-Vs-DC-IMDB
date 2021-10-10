@@ -38,7 +38,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [Marvel_DC_imdb.R](./Marvel_DC_imdb.R) : Exploratory Data Analysis
 - [Marvel_DC_imdb_Original](./Marvel_DC_imdb_Original.csv): Original Dataset
 - [](./): Clean Dataset
 
