@@ -2,7 +2,7 @@
 Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
 ### About's Marvel VS DC IMDB
-This dataset is about's Movie Name,Year,Genre,RunTime,Rating,Director,Actor,Description,IMDB_Score,Metascore,Votes,USA_Gross,Category
+This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
 ## Overview
 
@@ -14,7 +14,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 3. ประเภทของภาพยนต์ฝั่ง Marvel
 4. ภาพยนต์เรื่องไหนบ้างที่มีเนื้อหาไม่เหมาะสมกับเด็กและเยาวชนที่อายุต่ำกว่า 13 ปี ฝั่ง DC 
 5. ค่ายไหนที่สร้างรายได้ที่ได้จากภาพยนต์ได้มากกว่ากัน
-6. ภาพยนต์เรื่องไหนที่มีเวลาฉายต่ำว่า 100 นาที ทั้งฝั่งของ Marvel และ DC
+6. ภาพยนต์เรื่องไหนที่มีเวลาฉายต่ำกว่า 100 นาที ทั้งฝั่งของ Marvel และ DC
 
 ### Steps
 1. Define a question
