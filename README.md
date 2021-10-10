@@ -8,8 +8,8 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 
 
 ### Tools :
-R Studio Desktop
-R Language
+- R Studio Desktop
+- R Language
 ## Process
 
 
