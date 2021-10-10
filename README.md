@@ -4,22 +4,22 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 ## Objective
 //สิ่งที่เราอยากรู้ : 
 
-# Steps :
+### Steps :
 
 
-# Tools :
+### Tools :
 R Studio Desktop
 R Language
 ## Process
 
 
-## Table of Contents
+### Table of Contents
 
 
 ## Resources
-# Important File in Repository
+### Important File in Repository
 
-# Refercences
+### Refercences
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
