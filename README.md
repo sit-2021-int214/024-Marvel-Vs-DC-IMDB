@@ -1,19 +1,28 @@
 # 024-Marvel VS DC IMDB Dataset
 Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
-### About's Products Datasets
-
-This dataset is about's 
+### About's Marvel VS DC IMDB
+This dataset is about's Movie Name,Year,Genre,RunTime,Rating,Director,Actor,Description,IMDB_Score,Metascore,Votes,USA_Gross,Category
 
 ## Overview
 
+### Objects
 // Write Statement here
 E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+1. คะแนน IMDB_Scose ค่าสูงสุดของ Marvel และ DC
+2. ปีที่เท่าไหร่ที่มีการฉายภาพยนต์ของ Marvel และ DC มากที่สุด
+3. ประเภทของภาพยนต์ฝั่ง Marvel
+4. ภาพยนต์เรื่องไหนบ้างที่มีเนื้อหาไม่เหมาะสมกับเด็กและเยาวชนที่อายุต่ำกว่า 13 ปี ฝั่ง DC 
+5. ค่ายไหนที่สร้างรายได้ที่ได้จากภาพยนต์ได้มากกว่ากัน
+6. ภาพยนต์เรื่องไหนที่มีเวลาฉายต่ำว่า 100 นาที ทั้งฝั่งของ Marvel และ DC
 
 ### Steps
-
 1. Define a question
-2. Observe...
+2. Search datasets from Kaggle
+3. Download Library and dataset
+4. Explore the dataset from the original dataset
+5. Cleaning Dataset
+6. Exploratory Data Analysis
 
 ### Tools
 
@@ -30,8 +39,8 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./products_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [](./): Original Dataset
+- [](./): Clean Dataset
 
 ### References
 
