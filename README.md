@@ -4,8 +4,6 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 ### About's Marvel VS DC IMDB
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
-## Overview
-
 ### Objects
 // Write Statement here
 E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
