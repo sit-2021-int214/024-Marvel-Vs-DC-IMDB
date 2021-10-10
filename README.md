@@ -9,6 +9,7 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 ### Objects
 // Write Statement here
 E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+สิ่งที่อยากรู้ :
 1. คะแนน IMDB_Scose ค่าสูงสุดของ Marvel และ DC
 2. ปีที่เท่าไหร่ที่มีการฉายภาพยนต์ของ Marvel และ DC มากที่สุด
 3. ประเภทของภาพยนต์ฝั่ง Marvel
