@@ -1,11 +1,25 @@
-# Group024-Marvel VS DC IMDB Dataset
-Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
+# 024-Marvel VS DC IMDB Dataset
+Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
 ## Objective
+//สิ่งที่เราอยากรู้ : 
 
+Steps :
+
+
+Tools :
+R Studio Desktop
+R Language
 ## Process
 
-## Result
+
+## Table of Contents
+
+
+## Resources
+Important File in Repository
+
+Refercences
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
