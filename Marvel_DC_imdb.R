@@ -10,7 +10,4 @@ Marvel_DC <- read_csv("C:/Users/user/Desktop/int214/Marvel_DC_imdb.csv")
 View(Marvel_DC)
 
 # Remove แต่ละ col ที่ต้องการจะใช้งานที่มีข้อมูล Na
-Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$RunTime)) 
 Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$Rating))
-Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$Director))
-Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$USA_Gross))
