@@ -28,6 +28,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 - R Language
 - R Studio Desktop
+- Microsoft Excel
 
 ## Table of Contents
 
