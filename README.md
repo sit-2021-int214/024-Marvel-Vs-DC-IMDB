@@ -41,7 +41,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 - [Marvel_DC_imdb.R](./Marvel_DC_imdb.R) : Exploratory Data Analysis
 - [Marvel_DC_imdb_Original](./Marvel_DC_imdb_Original.csv): Original Dataset
-- [Marvel_DC_imdb_Clean](./Marvel_DC_imdb_Clean.csv): Clean Dataset
+- [Marvel_DC_imdb_Clean](./MarvelDC_Clean.csv): Clean Dataset
 
 ### References
 
