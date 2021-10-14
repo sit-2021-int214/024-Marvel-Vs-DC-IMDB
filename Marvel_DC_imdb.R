@@ -4,43 +4,44 @@ library(assertive)
 library(stringr)
 library(dplyr)
 
-#Data set
-read_csv("C:/Users/user/Desktop/int214/Marvel_DC_imdb.csv")
-Marvel_DC <- read_csv("C:/Users/user/Desktop/int214/Marvel_DC_imdb.csv")
+#Step 1 : Load data
+read_csv("C:/Users/user/Desktop/int214/MarvelDC/Marvel_DC_imdb.csv")
+Marvel_DC <- read_csv("C:/Users/user/Desktop/int214/MarvelDC/Marvel_DC_imdb.csv")
 View(Marvel_DC)
 
-#Check Type
-assert_is_character(Marvel_DC$Movie) #TRUE
-assert_is_numeric(Marvel_DC$Year) 
-assert_is_character(Marvel_DC$Genre) #TRUE
-assert_is_numeric(Marvel_DC$RunTime) 
-assert_is_numeric(Marvel_DC$Rating)
-assert_is_character(Marvel_DC$Director) #TRUE
-assert_is_character(Marvel_DC$Actor) #TRUE
-assert_is_character(Marvel_DC$Description) #TRUE
-assert_is_numeric(Marvel_DC$IMDB_Score) #TRUE
-assert_is_numeric(Marvel_DC$Metascore) #TRUE
-assert_is_numeric(Marvel_DC$Votes) #TRUE
-assert_is_numeric(Marvel_DC$USA_Gross) 
-assert_is_character(Marvel_DC$Category) #TRUE
+#Step 2 : Change to tibble
+Marvel_DC <- as_tibble(Marvel_DC)
+glimpse(Marvel_DC)
+
+#Step 3 : TransformData
+Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
+Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
+View(Marvel_DC)
+
+#Step 4 : Cleaning Data
+## Change data type
+Marvel_DC$Year_Started <- Marvel_DC$Year_Started %>% str_remove("-")%>%str_remove("[()]")%>%str_remove("[()]")%>%
+str_remove("Video")%>% str_remove("TV Special")%>%str_remove("Game")%>% str_remove(" TV Movie")%>% str_remove(" TV Short")%>%
+str_remove("III")%>%str_remove("II")%>%str_remove("I")%>%str_remove("V")%>%str_trim()%>% str_remove("[()]")%>%
+str_remove("[()]")%>%str_remove("–1958")%>% str_remove("–1978")%>%str_remove("–1995")%>%str_remove("–1999")%>% str_remove("–2000")%>%
+str_remove("–2001")%>% str_remove("–2002")%>% str_remove("–2003")%>%str_remove("–2004")%>%str_remove("–2005")%>%
+str_remove("–2006")%>% str_remove("–2008")%>% str_remove("–2010")%>% str_remove("–2011")%>% str_remove("–2012")%>%
+str_remove("–2015")%>% str_remove("–2016")%>% str_remove("–2018")%>% str_remove("–2019")%>% str_remove("–2020")%>%
+str_remove("–2021")%>%str_remove("–2021")%>%str_trim()%>% str_remove("–")
 
 # Remove แต่ละ col ที่ต้องการจะใช้งานที่มีข้อมูล Na
+Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$Year_Started))
+Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$RunTime))
 Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$Rating))
 Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$IMDB_Score))
-Marvel_DC <- Marvel_DC %>% filter(!is.na(Marvel_DC$RunTime))
-
-#Remove () , text ใน Year
-Marvel_DC$Year <- Marvel_DC$Year %>% str_remove("[()]") %>% str_remove("[()]") %>% str_remove("TV Special")%>% 
-  str_remove("Video")%>%str_remove("Video Game")%>% str_remove("Game")%>% str_remove(" TV Movie")%>% str_remove(" TV Short")%>%str_remove("III")%>%
-  str_remove("V")%>%str_remove("II")%>%str_trim()%>% str_remove("[()]") %>% str_remove("[()]") %>% str_remove("–1958")%>% str_remove("–1978")%>%
-  str_remove("–1995")%>%str_remove("–1999")%>% str_remove("–2001") %>% str_remove("–20002")%>% str_remove("–2003")%>% str_remove("–2004")%>% 
-  str_remove("–2005")%>%str_remove("–2006")%>% str_remove("–2008")%>% str_remove("–2010")%>% str_remove("–2011")%>%str_remove("–2012")%>%
-  str_remove("–2014")%>% str_remove("–2015")%>% str_remove("–2016")%>% str_remove("–2018")%>% str_remove("–2019")%>% str_remove("–2000")%>% 
-  str_remove("-2020")%>%str_remove("2020")%>% str_remove("–2021")%>% str_remove("–")
-
 
 #Remove "min" in Runtime
-Marvel_DC$RunTime %>% str_remove("min")
 Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
-Marvel_DC$RunTime
+
+##Checkpoint 1
+write.csv(Marvel_DC,"C:\\Users\\user\\Desktop\\int214\\MarvelDC\\MarvelDC_Clean.csv",row.names=FALSE)
+
+
+
+
 
