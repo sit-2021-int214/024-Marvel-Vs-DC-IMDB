@@ -41,7 +41,39 @@ Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
 ##Checkpoint 1
 write.csv(Marvel_DC,"C:\\Users\\user\\Desktop\\int214\\MarvelDC\\MarvelDC_Clean.csv",row.names=FALSE)
 
+#1
+sum((Marvel_DC$Category == "DC" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))) 
+Marvel_DC %>% select(Movie_Name,IMDB_Score,Category)%>%
+filter(Marvel_DC$Category == "DC" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))
 
+sum((Marvel_DC$Category == "Marvel" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))) 
+Marvel_DC %>% select(Movie_Name,IMDB_Score,Category)%>% 
+filter(Marvel_DC$Category == "Marvel" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))
+
+#2
+sum(Marvel_DC$Year_Started == 2021)
+mean(Marvel_DC$RunTime)
+distinct(Marvel_DC,Marvel_DC$Movie_Name)
+
+#3
+factor(Marvel_DC$Genre)
+distinct(Marvel_DC,Marvel_DC$Genre) 
+
+#4
+factor(Marvel_DC$Rating)
+RatingMovie <- factor(Marvel_DC$Rating)
+
+Marvel_DC %>% select(Movie_Name ,Rating ,Category)%>%
+  filter(RatingMovie == "PG-13" & Marvel_DC$Category == "DC")
+
+#5
+
+
+
+#6
+No6 <- 
+  distinct(Marvel_DC %>% select(Movie_Name,RunTime)%>%filter(Marvel_DC$RunTime < 100 ))
+View(No6)
 
 
 
