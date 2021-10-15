@@ -30,15 +30,13 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 1. [Exploratory Data Analysis](/01.explore.md)
 2. [Data Visualization]()
 
-## Resources
-
 ### Important Files in Repository
 - [Marvel_DC_imdb.R](./Marvel_DC_imdb.R) : Exploratory Data Analysis
 - [Marvel_DC_imdb_Original](./Marvel_DC_imdb_Original.csv): Original Dataset
 - [Marvel_DC_imdb_Clean](./MarvelDC_Clean.csv): Clean Dataset
 
 ### References
-// Link
+https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
@@ -55,6 +53,3 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 ### Instructor
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
-
-
-
