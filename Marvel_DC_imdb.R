@@ -48,3 +48,33 @@ View(new_MarvelDC)
 
 ##Checkpoint 1
 write.csv(Marvel_DC,"C:\\Users\\user\\Desktop\\int214\\MarvelDC\\MarvelDC_Clean.csv",row.names=FALSE)
+
+#1
+sum((Marvel_DC$Category == "DC" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))) 
+Marvel_DC %>% select(Movie_Name,IMDB_Score,Category)%>%
+  filter(Marvel_DC$Category == "DC" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))
+
+sum((Marvel_DC$Category == "Marvel" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))) 
+Marvel_DC %>% select(Movie_Name,IMDB_Score,Category)%>% 
+  filter(Marvel_DC$Category == "Marvel" & Marvel_DC$IMDB_Score == max(Marvel_DC$IMDB_Score))
+
+#2
+sum(Marvel_DC$Year_Started == 2021)
+mean(Marvel_DC$Year_Started == 2021)
+
+#3
+Marvel_DC %>% select(Genre) %>% unnest(Genre) %>% count(Genre) %>% arrange(desc(n)) %>% head()
+
+#4
+factor(Marvel_DC$Rating)
+RatingMovie <- factor(Marvel_DC$Rating)
+
+Marvel_DC %>% select(Movie_Name ,Rating ,Category)%>%
+  filter(RatingMovie == "PG-13" & Marvel_DC$Category == "DC")
+
+#5
+
+#6
+lessonehundred <- Marvel_DC %>% select(Movie_Name,RunTime,Category)%>%filter(Marvel_DC$RunTime < 100 )
+count(lessonehundred)
+lessonehundred %>% arrange(desc(RunTime))%>% head()
