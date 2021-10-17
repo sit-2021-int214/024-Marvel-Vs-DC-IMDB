@@ -14,15 +14,15 @@ View(Marvel_DC)
 Marvel_DC <- as_tibble(Marvel_DC)
 glimpse(Marvel_DC)
 
-#Step 3 : TransformData
-Marvel_DC$Year_Started <- as.numeric(Marvel_DC$Year_Started)
-
-#Step 4 : Cleaning Data
-## Rename
 Marvel_DC <-Marvel_DC %>% rename(No = ...1)
 Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
 Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
 View(Marvel_DC)
+
+#Step 3 : TransformData
+Marvel_DC$Year_Started <- as.numeric(Marvel_DC$Year_Started)
+
+#Step 4 : Cleaning Data
 
 ## Change data type
 Marvel_DC$Year_Started <- 
@@ -42,6 +42,9 @@ Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
 new_MarvelDC <- Marvel_DC %>% mutate(
   Genre = strsplit(Marvel_DC$Genre,","))
 glimpse(new_MarvelDC)
+
+new_MarvelDC <- Marvel_DC
+View(new_MarvelDC)
 
 ##Checkpoint 1
 write.csv(Marvel_DC,"C:\\Users\\user\\Desktop\\int214\\MarvelDC\\MarvelDC_Clean.csv",row.names=FALSE)
