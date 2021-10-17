@@ -6,13 +6,11 @@ library(dplyr)
 library(tidyr)
 
 #Step 1 : Load data
-
 read_csv("C:/Users/user/Desktop/int214/MarvelDC/Marvel_DC_imdb.csv")
 Marvel_DC <- read_csv("C:/Users/user/Desktop/int214/MarvelDC/Marvel_DC_imdb.csv")
 View(Marvel_DC)
 
 #Step 2 : Change to tibble
-
 Marvel_DC <- as_tibble(Marvel_DC)
 glimpse(Marvel_DC)
 
@@ -20,7 +18,6 @@ glimpse(Marvel_DC)
 Marvel_DC$Year_Started <- as.numeric(Marvel_DC$Year_Started)
 
 #Step 4 : Cleaning Data
-
 ## Rename
 Marvel_DC <-Marvel_DC %>% rename(No = ...1)
 Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
