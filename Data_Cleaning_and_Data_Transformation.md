@@ -62,29 +62,26 @@ $ Category     <chr> "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel",
 
 ## 2.1 Design and analyze to cleaning dataset
 ```
-1.Movie	Year :
-2.Genre :
-3.RunTime :
-4.Rating :	
-5.Director : 
-6.Actor : 
-7.Description : 
-8.IMDB_Score :
-9.Metascore : 
-10.Votes :
-11.USA_Gross :
-12.Category :
+1. ...1 : Sequence of movies (Rename and Change Type)
+2. Movie : Name of each movie (Rename)
+3. Year : Year of production started (Cleaning Data and Rename)
+4. Genre : Movie type (Cleaning Data)
+5. Runtime : Total screening time of the movie (Change Type and Cleaning Data)
+6. Rating : Classification of movies (Cleaning Data)
+7. Director : Film director
+8. Actor : Actor and Actresses
+9. Description : Plot
+10. IMDB_Score : IMDB Score 
+11. Metascore : Metascore
+12. Votes : No. of Votes in IMDB
+13. USA_Gross : Gross collection in USA
+14. Catagory : Marvel or DC
 ```
 ## 2.2 Cleaning and Transformation dataset
 #### Step 1 : Change to tibble
 ```
 Marvel_DC <- as_tibble(Marvel_DC)
 glimpse(Marvel_DC)
-
-Marvel_DC <-Marvel_DC %>% rename(No = ...1)
-Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
-Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
-View(Marvel_DC)
 ```
 #### Step 2 : Rename column 
 ```
@@ -112,7 +109,7 @@ Marvel_DC$Year_Started <-
  
 Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
 
-#แปลงค่าใน Genre
+#แยกค่าใน Genre
 new_MarvelDC <- Marvel_DC %>% mutate(
   Genre = strsplit(Marvel_DC$Genre,","))
 glimpse(new_MarvelDC)
