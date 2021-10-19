@@ -53,4 +53,42 @@ $ USA_Gross    <chr> NA, NA, "$858.37M", "$333.18M", "$390.53M", "$315.06M", "$6
 $ Category     <chr> "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Ma~
 
 ```
+## 2.Cleaning abd Transformation dataset
 
+#### Our Steps
+
+1. Design and analyze to cleaning dataset
+2. Cleaning and Transformation dataset
+
+## 2.1 Design and analyze to cleaning dataset
+```
+1.Movie	Year :
+2.Genre :
+3.RunTime :
+4.Rating :	
+5.Director : 
+6.Actor : 
+7.Description : 
+8.IMDB_Score :
+9.Metascore : 
+10.Votes :
+11.USA_Gross :
+12.Category :
+```
+## 2.2 Cleaning and Transformation dataset
+#### Step 1: Change to tibble
+```
+Marvel_DC <- as_tibble(Marvel_DC)
+glimpse(Marvel_DC)
+
+Marvel_DC <-Marvel_DC %>% rename(No = ...1)
+Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
+Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
+View(Marvel_DC)
+
+```
+#### Step 1: Rename column is ... 1 ,Movie,Year 
+```
+
+
+```
