@@ -5,23 +5,22 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 We looked at some of the major movies in the DC and Marvel universes, and you can answer the question: whose movies are better, DC or Marvel?
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
-### content
-```
-1. ...1 : Sequence of movies (Rename and Change Type)
-2. Movie : Name of each movie (Rename)
-3. Year : Year of production started (Cleaning Data and Rename)
-4. Genre : Movie type (Cleaning Data)
-5. Runtime : Total screening time of the movie (Change Type and Cleaning Data)
-6. Rating : Classification of movies (Cleaning Data)
-7. Director : Film director
-8. Actor : Actor and Actresses
-9. Description : Plot
-10. IMDB_Score : IMDB Score 
-11. Metascore : Metascore
-12. Votes : No. of Votes in IMDB
-13. USA_Gross : Gross collection in USA
-14. Catagory : Marvel or DC
-```
+### Contents
+1. `...1` : Sequence of movies (Rename and Change Type)
+2. `Movie` : Name of each movie (Rename)
+3. `Year` : Year of production started (Cleaning Data and Rename)
+4. `Genre` : Movie type (Cleaning Data)
+5. `Runtime` : Total screening time of the movie (Change Type and Cleaning Data)
+6. `Rating` : Classification of movies (Cleaning Data)
+7. `Director` : Film director
+8. `Actor` : Actor and Actresses
+9. `Description` : Plot
+10. `IMDB_Score` : IMDB Score 
+11. `Metascore` : Metascore
+12. `Votes` : No. of Votes in IMDB
+13. `USA_Gross` : Gross collection in USA
+14. `Catagory` : Marvel or DC
+
 ### Overview 
 เราได้ดูภาพยนตร์สำคัญบางเรื่องในจักรวาล DC และ Marvel และคุณสามารถตอบคำถามได้: หนังเรื่องไหนดีกว่ากัน DC หรือ Marvel?
 ชุดข้อมูลนี้เป็นข้อมูลเกี่ยวกับชื่อภาพยนตร์ ปี , ประเภท , รันไทม์ , การจัดอันดับ , ผู้กำกับ , นักแสดง , คำอธิบาย , IMDB_Score , Metascore , โหวต , USA_Gross , หมวดหมู่
@@ -39,12 +38,9 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 6. มีจำนวนภาพยนต์กี่เรื่องที่มีเวลาฉายต่ำกว่า 100 นาที ทั้งฝั่งของ Marvel และ DC (ยกตัวอย่าง 6 เรื่อง)
 
 ### Steps
-1. Define a question
-2. Search datasets from Kaggle
-3. Download Library and dataset
-4. Explore the dataset from the original dataset
-5. Cleaning Dataset
-6. Exploratory Data Analysis
+1. Explre Marvel-Vs-DC IMDB Dataset
+2. Data Cleaning and Data Transformation
+3. Data Analysis with Descriptive Statistics
 
 ### Tools
 - R Language
