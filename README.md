@@ -2,7 +2,32 @@
 Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
 ### About's Marvel VS DC IMDB
+We looked at some of the major movies in the DC and Marvel universes, and you can answer the question: whose movies are better, DC or Marvel?
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
+
+### content
+```
+1. ...1 : Sequence of movies (Rename and Change Type)
+2. Movie : Name of each movie (Rename)
+3. Year : Year of production started (Cleaning Data and Rename)
+4. Genre : Movie type (Cleaning Data)
+5. Runtime : Total screening time of the movie (Change Type and Cleaning Data)
+6. Rating : Classification of movies (Cleaning Data)
+7. Director : Film director
+8. Actor : Actor and Actresses
+9. Description : Plot
+10. IMDB_Score : IMDB Score 
+11. Metascore : Metascore
+12. Votes : No. of Votes in IMDB
+13. USA_Gross : Gross collection in USA
+14. Catagory : Marvel or DC
+```
+### Overview 
+เราได้ดูภาพยนตร์สำคัญบางเรื่องในจักรวาล DC และ Marvel และคุณสามารถตอบคำถามได้: หนังเรื่องไหนดีกว่ากัน DC หรือ Marvel?
+ชุดข้อมูลนี้เป็นข้อมูลเกี่ยวกับชื่อภาพยนตร์ ปี , ประเภท , รันไทม์ , การจัดอันดับ , ผู้กำกับ , นักแสดง , คำอธิบาย , IMDB_Score , Metascore , โหวต , USA_Gross , หมวดหมู่
+
+### Inspiration
+เหตุผลที่เลือกใช้ข้อมูลชุดนี้ เป็นเพราะ เพื่อนๆสมาชิกในกลุ่มชื่นชอบในการดูภาพยนตร์ ของทางค่าย DC และ Marvel เป็นอย่างมาก ทำให้พวกเราเลือกใช้ Dataset ที่เกี่ยวข้องกับ ข้อมูลต่างๆของทั้ง2ค่าย เพื่อความสะดวกในการวิเคราะห์ข้อมูล และได้มีการตรวจสอบข้อมูลเบื้องต้น ก่อนเลือกใช่ชุดข้อมูลนี้ พบว่าข้อมูลชุดนี้ มีการจัดแยกประเภทของข้อมูลได้อย่างน่าสนใจ และ ทำความเข้าใจได้ง่าย จึงเป็นเหตุผลที่ทำให้กลุ่มของพวกเราเลือกใช้ข้อมูลชุดนี้
 
 ### Objects
 สิ่งที่อยากรู้ :
