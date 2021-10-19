@@ -6,12 +6,12 @@ We looked at some of the major movies in the DC and Marvel universes, and you ca
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
 ### Contents
-1. `...1` : Sequence of movies 
-2. `Movie` : Name of each movie 
-3. `Year` : Year of production started 
-4. `Genre` : Movie type 
-5. `Runtime` : Total screening time of the movie 
-6. `Rating` : Classification of movies 
+1. `...1` : Sequence of movies (Rename and Change Type)
+2. `Movie` : Name of each movie (Rename)
+3. `Year` : Year of production started (Cleaning Data and Rename)
+4. `Genre` : Movie type (Cleaning Data)
+5. `Runtime` : Total screening time of the movie (Change Type and Cleaning Data)
+6. `Rating` : Classification of movies (Cleaning Data)
 7. `Director` : Film director
 8. `Actor` : Actor and Actresses
 9. `Description` : Plot
@@ -22,8 +22,8 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 14. `Catagory` : Marvel or DC
 
 ### Overview 
-เราได้ดูภาพยนตร์สำคัญบางเรื่องในจักรวาล DC และ Marvel และคุณสามารถตอบคำถามได้: หนังเรื่องไหนดีกว่ากัน DC หรือ Marvel?
-ชุดข้อมูลนี้เป็นข้อมูลเกี่ยวกับชื่อภาพยนตร์ ปี , ประเภท , รันไทม์ , การจัดอันดับ , ผู้กำกับ , นักแสดง , คำอธิบาย , IMDB_Score , Metascore , โหวต , USA_Gross , หมวดหมู่
+เป็นการวิเคราะห์ข้อมูลเกี่ยวกับ ภาพยนตร์ ที่มาจากทางค่าย Marvel และ DC โดยเป็นการวิเคราะห์ข้อมูลที่เกี่ยวกับความนิยมของภาพยนตร์ โดยมีการวัดความนิยมจาก คะแนน IMDb Score , Vote , รายได้ที่ได้จากการฉายภาพยนตร์ และอื่นๆ เป็นต้น เพื่อนำมาวิเคราะห์ ความนิยมของภาพยนตร์จากค่ายใดได้รับความนิยมมากกว่ากัน
+โดยทางกลุ่มของพวกเราได้ใช้ โปรแกรม R studio เพื่อนำมา Cleaning data และ transformation data ไปจนถึง วิเคราะห์เพื่อหาความสัมพันธ์ของข้อมูลและตั้งสมมติฐาน
 
 ### Inspiration
 เหตุผลที่เลือกใช้ข้อมูลชุดนี้ เป็นเพราะ เพื่อนๆสมาชิกในกลุ่มชื่นชอบในการดูภาพยนตร์ ของทางค่าย DC และ Marvel เป็นอย่างมาก ทำให้พวกเราเลือกใช้ Dataset ที่เกี่ยวข้องกับ ข้อมูลต่างๆของทั้ง2ค่าย เพื่อความสะดวกในการวิเคราะห์ข้อมูล และได้มีการตรวจสอบข้อมูลเบื้องต้น ก่อนเลือกใช่ชุดข้อมูลนี้ พบว่าข้อมูลชุดนี้ มีการจัดแยกประเภทของข้อมูลได้อย่างน่าสนใจ และ ทำความเข้าใจได้ง่าย จึงเป็นเหตุผลที่ทำให้กลุ่มของพวกเราเลือกใช้ข้อมูลชุดนี้
