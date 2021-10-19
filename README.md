@@ -6,12 +6,12 @@ We looked at some of the major movies in the DC and Marvel universes, and you ca
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
 ### Contents
-1. `...1` : Sequence of movies (Rename and Change Type)
-2. `Movie` : Name of each movie (Rename)
-3. `Year` : Year of production started (Cleaning Data and Rename)
-4. `Genre` : Movie type (Cleaning Data)
-5. `Runtime` : Total screening time of the movie (Change Type and Cleaning Data)
-6. `Rating` : Classification of movies (Cleaning Data)
+1. `...1` : Sequence of movies 
+2. `Movie` : Name of each movie 
+3. `Year` : Year of production started 
+4. `Genre` : Movie type 
+5. `Runtime` : Total screening time of the movie 
+6. `Rating` : Classification of movies 
 7. `Director` : Film director
 8. `Actor` : Actor and Actresses
 9. `Description` : Plot
