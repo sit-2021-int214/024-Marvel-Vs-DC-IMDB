@@ -27,8 +27,9 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 - Microsoft Excel
 
 ## Table of Contents
-1. [Exploratory Data Analysis](/01.explore.md)
-2. [Data Visualization]()
+1. [Data Cleaning and Data Transformation] ()
+2. [Exploratory Data Analysis](/01.explore.md)
+3. [Data Visualization]()
 
 ### Important Files in Repository
 - [Marvel_DC_imdb.R](./Marvel_DC_imdb.R) : Exploratory Data Analysis
