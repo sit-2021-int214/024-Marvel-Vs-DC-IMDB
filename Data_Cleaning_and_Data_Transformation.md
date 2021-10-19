@@ -3,14 +3,14 @@
 ## from Marvel VS DC IMDB Dataset
 ### Overviews
 
-1.Explore the Marvel VS DC IMDB Dataset 
+1. Explore the Marvel VS DC IMDB Dataset 
 2.Cleaning and Data Transformation
 
 ## 1. Explore the Marvel VS DC IMDB Dataset
 ### Our Steps
 
 1.Loading Library and dataset
-2.Explore the dataset
+2. Explore the dataset
 
 ### Loading library and dataset
 
