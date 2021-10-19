@@ -76,7 +76,7 @@ $ Category     <chr> "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel",
 12.Category :
 ```
 ## 2.2 Cleaning and Transformation dataset
-#### Step 1: Change to tibble
+#### Step 1 : Change to tibble
 ```
 Marvel_DC <- as_tibble(Marvel_DC)
 glimpse(Marvel_DC)
@@ -85,10 +85,35 @@ Marvel_DC <-Marvel_DC %>% rename(No = ...1)
 Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
 Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
 View(Marvel_DC)
-
 ```
-#### Step 1: Rename column is ... 1 ,Movie,Year 
+#### Step 2 : Rename column 
 ```
+#rename ...1
+Marvel_DC <-Marvel_DC %>% rename(No = ...1)
+#rename Movie
+Marvel_DC <-Marvel_DC %>% rename(Movie_Name = Movie)
+#rename Year
+Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
+```
+#### Step 3 : Change type dataset
+```
+#Year_Started
+Marvel_DC$Year_Started <- as.integer(Marvel_DC$Year_Started)
+#No
+Marvel_DC$No <- as.integer(Marvel_DC$No)
+#Runtime
+Marvel_DC$RunTime <- as.integer(Marvel_DC$RunTime)
+```
+#### Step 4 : Cleaning Dataset
+```
+#Clean String
+Marvel_DC$Year_Started <- 
+  Marvel_DC$Year_Started %>% str_sub(2,5) %>% str_remove("[III)]")%>% str_remove("[II)]")%>% str_remove("[I)]")%>% str_remove("[I) ]")%>%str_remove("[) (]")%>%str_remove("V") 
+ 
+Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
 
-
+#แปลงค่าใน Genre
+new_MarvelDC <- Marvel_DC %>% mutate(
+  Genre = strsplit(Marvel_DC$Genre,","))
+glimpse(new_MarvelDC)
 ```
