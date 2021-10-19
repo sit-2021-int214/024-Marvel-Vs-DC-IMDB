@@ -20,7 +20,9 @@ Marvel_DC <-Marvel_DC %>% rename(Year_Started = Year)
 View(Marvel_DC)
 
 #Step 3 : TransformData
-Marvel_DC$Year_Started <- as.numeric(Marvel_DC$Year_Started)
+Marvel_DC$Year_Started <- as.integer(Marvel_DC$Year_Started)
+Marvel_DC$No <- as.integer(Marvel_DC$No)
+Marvel_DC$RunTime <- as.integer(Marvel_DC$RunTime)
 
 #Step 4 : Cleaning Data
 
@@ -43,8 +45,8 @@ new_MarvelDC <- Marvel_DC %>% mutate(
   Genre = strsplit(Marvel_DC$Genre,","))
 glimpse(new_MarvelDC)
 
-new_MarvelDC <- Marvel_DC
-View(new_MarvelDC)
+Marvel_DC <- new_MarvelDC
+glimpse(Marvel_DC)
 
 ##Checkpoint 1
 write.csv(Marvel_DC,"C:\\Users\\user\\Desktop\\int214\\MarvelDC\\MarvelDC_Clean.csv",row.names=FALSE)
