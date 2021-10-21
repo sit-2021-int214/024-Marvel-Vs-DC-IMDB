@@ -1,48 +1,56 @@
-library(dplyr)
+#library
 library(readr)
-
-# Base R
-hist(starwars$height)
-plot(x=starwars$height, y=starwars$mass)
-
-# Load data
-Marvels <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/Marvels.csv")
-
-# Set data
-count_marvel <-table(Marvels$years)
-
-count_marvel
-
-# Create graph
-barplot(count_marvel)
-
-barplot(count_marvel,
-        main = "Number of Released Marvel Movies",   # Title of graphs
-        xlab = "Year Released",       # X-Axis Title
-        ylab = "Number of Movies",    # Y-Axis Title
-)
-
+library(assertive)
+library(stringr)
+library(dplyr)
+library(tidyr)
 library(ggplot2)
-## Marvel Dataset - Bar Chart
-#Step 1
-ggplot(Marvels,aes(x=years)) + geom_bar()
-#Step 2-1: Save to object
-marvel_plot <- ggplot(Marvels,aes(x=years)) + geom_bar()
-#Step 2-2: Adding component
-marvel_plot + ggtitle("Number of Released Marvel Movies") +
-  xlab("Year Released") + ylab("Number of Movies")
+library(data.table)
 
-#2-2: Example 2: Scatter Plot
-starwars %>% filter(mass>1000)
+#Step 1 : Load data
+read.csv("C:\\Users\\user\\Desktop\\int214\\assignment\\prog_book.csv")
+prog_book <- read.csv("C:\\Users\\user\\Desktop\\int214\\assignment\\prog_book.csv")
+View(prog_book)
 
-starwars %>% ggplot(aes(x=height,y=mass))+geom_point()
+glimpse(prog_book)
 
-scat_plot <- starwars %>% filter(mass<500) %>% ggplot(aes(x=height,y=mass))+
-  geom_point(aes(color=gender))
-scat_plot
+#Cleaning Data
 
-scat_plot+geom_smooth() #default value - loess
-scat_plot+geom_smooth(method="lm") #linear model
+prog_book$Reviews <- prog_book$Reviews %>% str_remove(",")
+assert_is_numeric(prog_book$Reviews)
+prog_book$Reviews <- as.numeric(prog_book$Reviews)
 
-# 3: Histogram
-starwars %>% ggplot(aes(x=height))+geom_histogram(binwidth = 15)
+prog_book$Book_title <- prog_book$Book_title %>% str_remove("โ€“")
+
+glimpse(prog_book)
+
+#1 
+prog_book %>% count(Type) 
+booktype <- prog_book %>% select(Type) %>% unnest(Type) %>% count(Type) %>% rename(Total = n)%>% rename(TypeOfBook = Type)
+booktype 
+
+#2 
+Maxrating <- max(prog_book$Rating) #5
+Minrating <- min(prog_book$Rating) #3
+Maxrating - Minrating 
+
+prog_book %>% select(Book_title,Rating) %>%filter(prog_book$Rating == Maxrating )
+prog_book %>% select(Book_title,Rating) %>%filter(prog_book$Rating == Minrating )
+
+#3 
+mean(prog_book$Reviews)
+prog_book %>% select(Book_title,Reviews) %>% filter(prog_book$Reviews > mean(prog_book$Reviews))%>% arrange(data.frame(Reviews))%>% head()
+
+#4 
+prog_book %>% select(Book_title,Price) %>% filter(prog_book$Description %like% 'Google')
+
+#5 
+mean(prog_book$Number_Of_Pages)
+Maxpages <- max(prog_book$Number_Of_Pages)
+Minpages <- min(prog_book$Number_Of_Pages)
+prog_book %>% select(Number_Of_Pages , Book_title) %>% filter(prog_book$Number_Of_Pages == Maxpages ) 
+prog_book %>% select(Number_Of_Pages , Book_title) %>% filter(prog_book$Number_Of_Pages == Minpages)
+
+#6 
+sum(prog_book$Number_Of_Pages > 300)
+prog_book %>% select(Book_title , Number_Of_Pages , Price) %>% filter(prog_book$Number_Of_Pages > 300)%>% arrange(desc(Price)) %>% head()
