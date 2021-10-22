@@ -53,7 +53,7 @@ $ USA_Gross    <chr> NA, NA, "$858.37M", "$333.18M", "$390.53M", "$315.06M", "$6
 $ Category     <chr> "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel", "Marvel~
 
 ```
-## 2.Cleaning abd Transformation dataset
+## 2.Cleaning and Transformation dataset
 
 #### Our Steps
 
