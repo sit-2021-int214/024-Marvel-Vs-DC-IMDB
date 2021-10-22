@@ -38,7 +38,7 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 6. มีจำนวนภาพยนต์กี่เรื่องที่มีเวลาฉายต่ำกว่า 100 นาที ทั้งฝั่งของ Marvel และ DC (ยกตัวอย่าง 6 เรื่อง)
 
 ### Steps
-1. Explre Marvel-Vs-DC IMDB Dataset
+1. Explore Marvel-Vs-DC IMDB Dataset
 2. Data Cleaning and Data Transformation
 3. Data Analysis with Descriptive Statistics
 
