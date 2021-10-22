@@ -5,7 +5,7 @@ Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetul
 We looked at some of the major movies in the DC and Marvel universes, and you can answer the question: whose movies are better, DC or Marvel?
 This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director , Actor , Description , IMDB_Score , Metascore , Votes , USA_Gross , Category
 
-### Contents
+### Contents in Datagram
 1. `...1` : Sequence of movies (Rename and Change Type)
 2. `Movie` : Name of each movie (Rename)
 3. `Year` : Year of production started (Cleaning Data and Rename)
