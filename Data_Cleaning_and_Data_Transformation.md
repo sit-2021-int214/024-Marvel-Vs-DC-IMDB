@@ -105,8 +105,8 @@ Marvel_DC$RunTime <- as.integer(Marvel_DC$RunTime)
 ```
 #Clean String
 Marvel_DC$Year_Started <- 
-  Marvel_DC$Year_Started %>% str_sub(2,5) %>% str_remove("[III)]")%>% str_remove("[II)]")%>% str_remove("[I)]")%>% str_remove("[I) ]")%>%
-  str_remove("[) (]")%>%str_remove("V") 
+  Marvel_DC$Year_Started%>%str_sub(2,5) %>% str_remove("[III)]")%>%str_remove("[II)]")%>% str_remove("[I)]")%>% 
+  str_remove("[I) ]")%>%str_remove("[) (]")%>%str_remove("V") 
  
 Marvel_DC$RunTime <- Marvel_DC$RunTime %>% str_remove("min")
 
