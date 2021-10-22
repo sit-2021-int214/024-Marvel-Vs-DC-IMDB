@@ -1,7 +1,7 @@
 # 024-Marvel VS DC IMDB Dataset
 Original Datasets from: [Marvel VS DC IMDB Dataset](https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ)
 
-![MarvelDC](https://github.com/sit-2021-int214/024-Marvel-Vs-DC-IMDB/blob/main/PictureResult/GenPop-Marvel-vs-DC-wider-and-taller-crop-web.jpg)
+![MarvelDC](https://github.com/sit-2021-int214/024-Marvel-Vs-DC-IMDB/blob/main/PictureResult/GenPop-Marvel-vs-DC-wider-and-taller-crop-web.jpg {width=40px height=400px})
 
 ### About's Marvel VS DC IMDB
 We looked at some of the major movies in the DC and Marvel universes, and you can answer the question: whose movies are better, DC or Marvel?
