@@ -31,6 +31,10 @@ prog_book$Description <- str_replace(prog_book$Description,"รถ","ro")
 prog_book$Description <- str_replace(prog_book$Description,"โ€","“")
 prog_book$Description <- str_replace(prog_book$Description,"โ€","”")
 prog_book$Book_title <- str_replace(prog_book$Book_title,"โ€“ ","–")
+prog_book$Description <- str_replace(prog_book$Description,"”","'")
+prog_book$Description <- str_replace(prog_book$Description, "รก","á" )
+prog_book$Description <- str_replace(prog_book$Description, "รก","á" )
+prog_book$Description <- str_replace(prog_book$Description, "รณ","ó" )
 
 glimpse(prog_book)
 
@@ -38,9 +42,9 @@ glimpse(prog_book)
 write.csv(prog_book,"C:\\Users\\user\\Desktop\\int214\\assignment\\prog_book_Clean.csv",row.names=FALSE)
 
 #1 type ของหนังสือมีกี่ชนิด และ มีอะไรบ้าง
-prog_book %>% count(Type) 
 booktype <- prog_book %>% select(Type) %>% unnest(Type) %>% count(Type) %>% rename(Total = n)%>% rename(TypeOfBook = Type)
-booktype 
+count(booktype) %>% rename(Total = n)
+booktype
 
 #2 ค่าสูงสุดและต่ำสุดของ Rating แตกต่างกันเท่าไหร่ และ หา book_title ของค่าสูงสุด และ ต่ำสุด
 Maxrating <- max(prog_book$Rating) #5
@@ -79,5 +83,3 @@ barplot(total_types,main = "Total of Types", xlab = "count Type", ylab = "Type o
 
 # ตรวจสอบข้อมูลของ Reviews ว่ามี ชื่อหนังสือ เล่นไหนบ้างมี Reviews เกิน 1000 Reviews
 pie(table(prog_book %>% select(Book_title) %>% filter(prog_book$Reviews < 500 )))
-
-
