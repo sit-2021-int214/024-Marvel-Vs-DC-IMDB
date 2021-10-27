@@ -66,4 +66,5 @@ lastPart
 #??????????????? barplot
 barplot(lastPart$price.total_price , names.arg = lastPart$price.Type , main = "Total price of each Types" , xlab = "Type of book" , ylab = "Total Price")
 
-
+#part4.2
+pie(table(prog_book %>% select(Book_title) %>% filter(prog_book$Type == 'ebook')))
