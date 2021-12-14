@@ -89,6 +89,10 @@ if(criticalmarvel > t_testing){
   print("Access HO")
 }
 ```
+Result
+```
+
+```
 ### Step 7: Conclusion
 ```
 p-value approach :
