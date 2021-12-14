@@ -9,9 +9,9 @@
 ### Step 0: Assign variables
 ```
 DCRuntime <- as.integer(DC_Clean$RunTime)
-DC_XBAR <- mean(DCRuntime) #38.324
-DC_N <- length(DCRuntime) #1026
-DC_SD <- sqrt(var(DCRuntime)) #26.769
+DC_XBAR <- mean(DCRuntime) 
+DC_N <- length(DCRuntime) 
+DC_SD <- sqrt(var(DCRuntime)) 
 DC_Mue <- 60
 ```
 
@@ -31,7 +31,7 @@ DC_alpha <- 0.05
 ### Step 3: Find x-bar, sd
 
 ```
-DC_XBAR <- mean(DCRuntime)
+DC_XBAR <- mean(DCRuntime) 
 DC_SD <- sqrt(var(DCRuntime))
 ```
 Result
@@ -53,11 +53,11 @@ t : -25.93548
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
-pDC <- 2*pt(tDC , DC_N - 1)
+pDC <- 2*pnorm(tDC)
 ```
 Result
 ```
-p value : 1.9758
+p value : 2.651
 ```
 
 #### Critical Value approach
@@ -84,11 +84,12 @@ Result
 ```
 ```
 # Using critical approach
-if(tCriDC > tDC){
+if(tDC <= tCriDC ){
   print("Reject HO")
 }else{
   print("Access HO")
 }
+
 ```
 Result
 ```
