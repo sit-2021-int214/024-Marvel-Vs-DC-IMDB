@@ -17,8 +17,8 @@ DC_N2 <- length(DC$IMDB_Score)
 ### Step 1: State the hypothesis
 
 ```
-Ho : μ <= 5
-Ha : μ >= 5
+Ho : μ >= 5
+Ha : μ < 5
 ```
 
 ### Step 2: Level of significance
