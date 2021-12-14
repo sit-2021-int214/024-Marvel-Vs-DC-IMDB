@@ -8,9 +8,10 @@
 
 ### Step 0: Assign variables
 ```
+Marvel_Mue <- 5
 Marvel_XBar <- mean(Marvel_Clean$IMDB_Score) 
 Marvel_SD <- sqrt(var(Marvel_Clean$IMDB_Score)) 
-Marvel_N <- length(Marvel_Clean$IMDB_Score)
+Marvel_N <- length(Marvel_Clean$IMDB_Score) 
 ```
 
 ### Step 1: State the hypothesis
@@ -23,7 +24,7 @@ Ha : μ >= 5
 ### Step 2: Level of significance
 
 ```
-Marvel_Alpha <- 0.05
+Marvel_Alpha <- 0.05Marvel_Alpha <- 0.05
 ```
 
 ### Step 3: Find x-bar, sd
@@ -35,36 +36,36 @@ Marvel_SD <- sqrt(var(Marvel_Clean$IMDB_Score))
 Result
 
 ```
-mean :
-sd : 
+mean : 7.571533
+sd : 1.15587
 ```
 
 ### Step 4: Test statistic
 ```
-t <- (Marvel_XBar - Marvel_Mue) / (Marvel_SD/sqrt(Marvel_N))
+t <- (Marvel_XBar - Marvel_Mue) / (Marvel_SD/sqrt(Marvel_N)) 
 ```
 Result
 ```
-t :
+t : 36.82631
 ```
 
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
-tp <- (Marvel_XBar - Marvel_Mue)/(Marvel_SD/sqrt(Marvel_N)-Marvel_N-1)
+p <- pnorm(t) 
 ```
 Result
 ```
-p value :
+p value : 1
 ```
 
 #### Critical Value approach
 ```
-critical <- qt(Marvel_Alpha,Marvel_N-1) 
+critical <- qnorm(Marvel_Alpha); 
 ```
 Result
 ```
-critical :
+critical : -1.644854
 ```
 
 ### Step 6: Compare
@@ -78,11 +79,11 @@ if(p <= Marvel_Alpha){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ```
 # Using critical approach
-if(critical >= t ){
+if(t <= critical){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -90,10 +91,10 @@ if(critical >= t ){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ### Step 7: Conclusion
 ```
-p-value approach :
-critical approach :
+p-value approach : "Access HO"
+critical approach : "Access HO"
 ```
