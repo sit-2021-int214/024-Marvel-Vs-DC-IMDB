@@ -28,7 +28,7 @@ library(tidyr)
 ### Explore the dataset
 ```
 #DataSet
-Marvel_DC <- read.csv("C:\Users\user\Desktop\int214\MarvelDC\MarvelDC_Clean.csv")
+Marvel_DC <- read.csv("C:\Users\CREAM\Desktop\R-INT214\MarvelDC_Clean2.csv")
 View(Marvel_DC)
 glimpse(Marvel_DC)
 
