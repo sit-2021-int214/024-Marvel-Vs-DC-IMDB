@@ -24,7 +24,7 @@ Ha : μ > 60
 ### Step 2: Level of significance
 
 ```
-alpha <- 0.05
+M_alpha <- 0.05
 ```
 
 ### Step 3: Find x-bar, sd
@@ -36,42 +36,42 @@ M_SD<- sqrt(var(MRunTime))
 Result
 
 ```
-mean :
-sd : 
+mean : 56.13504
+sd : 39.71769
 ```
 
 ### Step 4: Test statistic
 ```
-t_testing <- (M_XBar - Mue) / (M_SD/sqrt(M_N))
+Marvel_t <- (M_XBar - Mue) / (M_SD/sqrt(M_N))
 ```
 Result
 ```
-t :
+t : -1.610782
 ```
 
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
-pmarvel <- pt(t_testing,M_N - 1)
+Marvel_p <-2*pnorm(Marvel_t)
 ```
 Result
 ```
-p value :
+p value : 0.1072273
 ```
 
 #### Critical Value approach
 ```
-criticalmarvel <- qt(alpha ,M_N - 1)
+Marvel_Critical <- qt(1-M_alpha/2,M_N-1)
 ```
 Result
 ```
-critical :
+critical : 1.968692
 ```
 
 ### Step 6: Compare
 ```
 # Using p-value approach
-if(pmarvel < alpha){
+if(Marvel_p <= M_alpha){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -79,11 +79,11 @@ if(pmarvel < alpha){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ```
 # Using critical approach
-if(criticalmarvel > t_testing){
+if(Marvel_t > Marvel_Critical){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -91,11 +91,11 @@ if(criticalmarvel > t_testing){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ### Step 7: Conclusion
 ```
-p-value approach :
-critical approach :
+p-value approach : "Access HO" 
+critical approach : "Access HO"
 ```
 
