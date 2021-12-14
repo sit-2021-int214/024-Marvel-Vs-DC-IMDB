@@ -48,12 +48,7 @@ Result
 ```
 t :
 ```
-```
-p value :
-```
-```
-critical :
-```
+
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
@@ -63,6 +58,7 @@ Result
 ```
 p value :
 ```
+
 #### Critical Value approach
 ```
 criticalmarvel <- qt(alpha ,M_N - 1)
@@ -73,7 +69,6 @@ critical :
 ```
 
 ### Step 6: Compare
-
 ```
 # Using p-value approach
 if(pmarvel < alpha){
