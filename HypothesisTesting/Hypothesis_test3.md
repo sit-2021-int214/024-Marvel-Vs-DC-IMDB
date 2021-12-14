@@ -97,6 +97,5 @@ Result
 ```
 ### Step 7: Conclusion
 ```
-p-value approach : "Reject HO"
-critical approach : "Reject HO"
+ผลลัพธ์ปฏิเสธ Ho สรุปได้ว่า ค่าเฉลี่ยรอบฉายภาพยนต์จากค่าย DC ไม่เท่ากับ 60 รอบ
 ```
