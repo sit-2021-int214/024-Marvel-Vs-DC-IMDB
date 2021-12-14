@@ -17,8 +17,8 @@ Mue <- 60
 ### Step 1: State the hypothesis
 
 ```
-Ho : μ <= 60
-Ha : μ > 60
+Ho : μ = 60
+Ha : μ != 60
 ```
 
 ### Step 2: Level of significance
