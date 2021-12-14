@@ -66,10 +66,10 @@ https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA
 - DC : https://datastudio.google.com/reporting/d6a0ed42-00ed-4dc4-8a22-9dc36e35af93
 - Marvel : https://datastudio.google.com/reporting/f83ad3b7-c708-40f8-b735-dbde792626ac
 
-## About Us
+## 📚 About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
-### Team: 024 - Numberone
+### 👷🏽‍♀️ 👷🏽 Team: 024 - Numberone
 | No. | Name              | Student ID   |
 |:---:|-------------------|--------------|
 |  1  | นางสาว ปิยะมน สุดดี      | 63130500082  |
@@ -78,6 +78,6 @@ https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA
 |  4  | นาย สุทธิพงษ์ ชนะมูล   | 63130500121 |
 |  5  | นางสาว สุพิชญา หมื่นนุช   | 63130500123 |
 
-### Instructor
+### 🕵🏽‍♀️ 🕵🏽 Instructor
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
