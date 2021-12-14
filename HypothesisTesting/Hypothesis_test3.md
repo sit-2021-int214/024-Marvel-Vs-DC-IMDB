@@ -8,12 +8,11 @@
 
 ### Step 0: Assign variables
 ```
-DC$RunTime <- as.integer(DC$RunTime)
+DCRuntime <- as.integer(DC_Clean$RunTime)
 DC_XBAR <- mean(DCRuntime) #38.324
 DC_N <- length(DCRuntime) #1026
 DC_SD <- sqrt(var(DCRuntime)) #26.769
 DC_Mue <- 60
-
 ```
 
 ### Step 1: State the hypothesis
@@ -32,48 +31,48 @@ DC_alpha <- 0.05
 ### Step 3: Find x-bar, sd
 
 ```
-DC_XBAR <- mean(DCRuntime) #38.324
-DC_SD <- sqrt(var(DCRuntime)) #26.769
+DC_XBAR <- mean(DCRuntime)
+DC_SD <- sqrt(var(DCRuntime))
 ```
 Result
 
 ```
-mean :
-sd : 
+mean : 38.324
+sd : 26.769
 ```
 
 ### Step 4: Test statistic
 ```
-tdc <- (DC_XBAR - DC_Mue ) / (DC_SD/sqrt(DC_N)) #-25.935
+tDC <- (DC_XBAR - DC_Mue ) / (DC_SD/sqrt(DC_N))
 ```
 Result
 ```
-t :
+t : -25.93548
 ```
 
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
-pdc <- pt(tdc , DC_N - 1) #9.879
+pDC <- 2*pt(tDC , DC_N - 1)
 ```
 Result
 ```
-p value :
+p value : 1.9758
 ```
 
 #### Critical Value approach
 ```
-tcridc <- qt(alpha , DC_N-1) #-1.646
+tCriDC <- qt(1-DC_alpha/2 , DC_N-1)
 ```
 Result
 ```
-critical :
+critical : 1.962281
 ```
 
 ### Step 6: Compare
 ```
 # Using p-value approach
-if(pdc < DC_alpha){
+if(pDC <= DC_alpha){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -81,11 +80,11 @@ if(pdc < DC_alpha){
 ```
 Result
 ```
-
+"Reject HO"
 ```
 ```
 # Using critical approach
-if(tcridc >= tdc){
+if(tCriDC > tDC){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -93,10 +92,10 @@ if(tcridc >= tdc){
 ```
 Result
 ```
-
+"Reject HO"
 ```
 ### Step 7: Conclusion
 ```
-p-value approach :
-critical approach :
+p-value approach : "Reject HO"
+critical approach : "Reject HO"
 ```
