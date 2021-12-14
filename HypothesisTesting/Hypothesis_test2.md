@@ -24,7 +24,7 @@ Ha : μ >= 5
 ### Step 2: Level of significance
 
 ```
-Marvel_Alpha <- 0.05Marvel_Alpha <- 0.05
+Marvel_Alpha <- 0.05
 ```
 
 ### Step 3: Find x-bar, sd
