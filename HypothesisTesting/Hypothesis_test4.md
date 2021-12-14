@@ -8,10 +8,10 @@
 
 ### Step 0: Assign variables
 ```
-DC_Mue <- 5
-mean(DC$RunTime) 
-sqrt(var(DC$RunTime)) 
-length(DC$RunTime)
+DC_Mue2 <- 5
+DC_XBar2 <- mean(DC$IMDB_Score)
+DC_SD2 <- sqrt(var(DC$IMDB_Score)) 
+DC_N2 <- length(DC$IMDB_Score)
 ```
 
 ### Step 1: State the hypothesis
@@ -24,54 +24,54 @@ Ha : μ >= 5
 ### Step 2: Level of significance
 
 ```
-DC_Alpha <- 0.05
+DC_Alpha2 <- 0.05
 ```
 
 ### Step 3: Find x-bar, sd
 
 ```
-mean(DC$RunTime) 
-sqrt(var(DC$RunTime)) 
+DC_XBar2 <- mean(DC$IMDB_Score)
+DC_SD2 <- sqrt(var(DC$IMDB_Score)) 
 ```
 Result
 
 ```
-mean :
-sd : 
+mean : 8.030604
+sd : 0.7463204
 ```
 
 ### Step 4: Test statistic
 ```
-tdc2 <- (DC_XBar - DC_Mue) / (DC_XBar/sqrt(DC_N))
+tDC2 <- (DC_XBar2 - DC_Mue2) / (DC_SD2/sqrt(DC_N2))
 ```
 Result
 ```
-t :
+t : 130.0701
 ```
 
 ### Step 5: Finding P-value approach or Critical Value approach
 #### P-value approach
 ```
-pdc2 <- (Marvel_XBar - Marvel_Mue)/(Marvel_SD/sqrt(Marvel_N)-Marvel_N-1)
+pDC2 <- pnorm(tDC2) 
 ```
 Result
 ```
-p value :
+p value : 1
 ```
 
 #### Critical Value approach
 ```
-critical2 <- qt(Marvel_Alpha,Marvel_N-1) 
+critical2 <- qnorm(Marvel_Alpha) 
 ```
 Result
 ```
-critical :
+critical : -1.644854
 ```
 
 ### Step 6: Compare
 ```
 # Using p-value approach
-if(pdc2 <= DC_Alpha){
+if(pDC2 <= DC_Alpha2){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -79,11 +79,11 @@ if(pdc2 <= DC_Alpha){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ```
 # Using critical approach
-if(critical2 >= tdc2){
+if(tDC2 <= critical2){
   print("Reject HO")
 }else{
   print("Access HO")
@@ -91,10 +91,10 @@ if(critical2 >= tdc2){
 ```
 Result
 ```
-
+"Access HO"
 ```
 ### Step 7: Conclusion
 ```
-p-value approach :
-critical approach :
+p-value approach : "Access HO"
+critical approach : "Access HO"
 ```
