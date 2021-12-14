@@ -95,7 +95,6 @@ Result
 ```
 ### Step 7: Conclusion
 ```
-p-value approach : "Access HO" 
-critical approach : "Access HO"
+ผลลัพธ์เป็นไปตาม Ho สรุปได้ว่า ค่าเฉลี่ยรอบฉายภาพยนต์จากค่าย Marvel เท่ากับ 60 รอบ
 ```
 
