@@ -48,6 +48,7 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 - R Language
 - R Studio Desktop
 - Microsoft Excel
+- Data Studio
 
 ## 📍 Table of Contents
 1. [Data Cleaning and Data Transformation](/Data_Cleaning_and_Data_Transformation.md)
