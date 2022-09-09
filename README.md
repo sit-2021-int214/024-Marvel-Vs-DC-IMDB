@@ -62,10 +62,6 @@ This dataset is about's Movie Name , Year , Genre , RunTime , Rating , Director 
 ### 🔍 References
 https://www.kaggle.com/hetulmehta/marvel-vs-dc-imdb-dataset?fbclid=IwAR3WLj6EXxA3n5rmIOtylgNSzu0qfwTjTtNSFVH4fOPqP2XB_j2wXWBseTQ
 
-### 🔍 DataStudio
-- DC : https://datastudio.google.com/reporting/d6a0ed42-00ed-4dc4-8a22-9dc36e35af93
-- Marvel : https://datastudio.google.com/reporting/f83ad3b7-c708-40f8-b735-dbde792626ac
-
 ## 📚 About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
